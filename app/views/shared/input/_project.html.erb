@@ -1,0 +1,6 @@
+<%= render 'shared/edit_sub_section' do %>
+  <%= project.text_field :title, value: project.object.title, placeholder: "School" %><br/>
+  <%= project.text_field :project_url, value: project.object.url, placeholder: "Degree" %><br/>
+  <%= project.text_area :description, value: project.object.description, placeholder: "End date" %><br/>
+  <%= render 'shared/input/buttons/delete', type: project %>
+<% end %>
